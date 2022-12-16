@@ -27,7 +27,7 @@ eval `ssh-agent` ssh-add /home/ubuntu/.ssh/abc.pem
 
 -----**** Set swappiness ****-----
 
-sudo sysctl vm.swappiness=0
+sudo sysctl vm.swappiness=1
 echo 'vm.swappiness=1' | sudo tee --append /etc/sysctl.conf
 
 -----**** Download zookeeper and kafka ****-----
